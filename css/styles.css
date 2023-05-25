@@ -11076,12 +11076,17 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+#top a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 @media (max-width: 400px) {
   #top {
     font-size: 13px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 359px) {
   #top {
     display: none !important;
   }
@@ -11236,16 +11241,16 @@ img {
 .card-body .display-6 {
   font-size: 2rem;
 }
-.card-body a {
+.card-body .show-more a {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
   color: #d7b56d;
 }
-.card-body a.collapsed:after {
+.card-body .show-more a.collapsed:after {
   content: "+ Pokaż więcej";
 }
-.card-body a:not(.collapsed):after {
+.card-body .show-more a:not(.collapsed):after {
   content: "- Pokaż mniej";
 }
 
@@ -11270,11 +11275,22 @@ img {
   pointer-events: none; /* so the text is still selectable */
 }
 
-.position {
+.card-body .position {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 20px;
+  color: #d7b56d;
+}
+
+.card-body .telegram {
+  font-size: 12px;
+  font-weight: 400;
+  color: #d7b56d;
+}
+
+.card-body .voice {
+  font-size: 12px;
+  font-weight: 400;
   color: #d7b56d;
 }
 
